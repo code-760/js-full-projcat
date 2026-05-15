@@ -758,7 +758,7 @@ header h1 {
   border-bottom: none;
 }
 
-.time {
+.row .time {
   width: 80px;
   padding: 5px;
   border-right: 1px solid #a67c6d;
@@ -915,7 +915,7 @@ header h1 {
   gap: 10px;
 }
 
-input[type="text"] {
+.add-goal-box>input[type="text"] {
   flex-grow: 1;
   background: transparent;
   border: none;
