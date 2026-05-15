@@ -326,7 +326,7 @@ nav h3:active {
   border: 1px solid var(--border-subtle);
 }
 
-.inputs-add > input,
+.inputs-add > .task,
 textarea {
   width: 100%;
   padding: 15px;
@@ -340,7 +340,7 @@ textarea {
   transition: border 0.3s ease;
 }
 
-.inputs-add > input:focus,
+.inputs-add > .task:focus,
 textarea:focus {
   border: 1px solid var(--accent);
 }
