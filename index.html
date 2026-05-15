@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>productivity-Dashboard</title>
+    <link rel="shortcut icon" href="./img/apple-touch-icon.png" type="image/x-icon">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- Home page -->
+      <section class="dashboard">
+        <div class="part-left">
+          <nav class="nav">
+            <h2>productivity dashboard</h2>
+            <h3>chain theme</h3>
+          </nav>
+          <div class="tamp">
+            <div class="tamp-time">
+              <h5></h5>
+              <h3></h3>
+              <h4></h4>
+            </div>
+            <div class="tamp-tamprchar">
+              <div class="tamp-digri">
+                <h2 class="deg"></h2>
+                <span>°C°F</span>
+              </div>
+
+              <h2 class="tampcondition"></h2>
+              <h3 class="Precipitation"></h3>
+              <h3 class="Humidity"></h3>
+              <h3 class="Wind"></h3>
+            </div>
+          </div>
+          <div class="bottom-left">
+            <div id="1" class="card-left card">
+              <img src="../img/image01.avif" alt="Todo" />
+              <h3>TODO-LIST</h3>
+            </div>
+            <div id="2" class="card-right card">
+              <img src="../img/imgae02.avif" alt="Timer" />
+              <h3>TIMER</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="part-right">
+          <div id="3" class="card top-box">
+            <img src="../img/image03.jpg" alt="Goals" />
+            <h3>DAILY GOALS</h3>
+          </div>
+          <div id="4" class="card middle-box">
+            <img src="../img/image04.avif" alt="Goals" />
+            <h3>MOTIVTION</h3>
+          </div>
+          <div id="5" class="card bottom-box">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1706259481452-f857c96ceaca?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+            <h3>DAILY PLANNER</h3>
+          </div>
+        </div>
+      </section>
+      <!-- to-do list page -->
+      <section class="full-page todo-ditels">
+        <div class="todo">
+          <!-- Left Side: Add Task Form -->
+          <div class="add-todo">
+            <!-- Back Button -->
+            <button class="back">
+              <i class="ri-arrow-left-line"></i>
+              <span>BACK</span>
+            </button>
+
+            <!-- Input Form -->
+            <form class="inputs-add">
+              <input
+                type="text"
+                placeholder="Write your task name..."
+                required
+              />
+              <textarea
+                placeholder="Write your task details..."
+                required
+              ></textarea>
+              <button type="submit" class="add-task">Add Task</button>
+            </form>
+          </div>
+
+          <!-- Right Side: Task List -->
+          <div class="todolist">
+            <h2>Task's</h2>
+            <!-- Tasks will be injected here by JS -->
+          </div>
+        </div>
+      </section>
+      <!-- pomodoro Timer -->
+      <section class="full-page">
+        <div class="promodro">
+          <img
+            src="https://images.unsplash.com/photo-1778192391493-7436d746b128?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+          <div class="time-back">
+            <button class="back">
+              <i class="ri-arrow-left-line"></i>
+            </button>
+            <span>Focus for now, relax later</span>
+          </div>
+          <div class="pmodoro-item">
+            <div class="timer-button">
+              <button class="start button-time">start</button>
+              <button class="pose button-time">pose</button>
+              <button class="rept button-time">restart</button>
+            </div>
+
+            <div class="time"></div>
+          </div>
+        </div>
+      </section>
+      <!--Daily Goals  -->
+      <section class="full-page">
+        <div>
+          <div class="planner-card">
+            <div class="header">
+              <button class="back">
+                <i class="ri-arrow-left-line"></i>
+              </button>
+              <span>Focus for now, relax later</span>
+            </div>
+
+            <div class="container">
+              <div class="header-top">
+                <div class="header-title">
+                  <h1>Aaj ke Goals 🚀</h1>
+                  <p style="color: #94a3b8; margin-top: 5px">
+                    Friday, 15 May 2026
+                  </p>
+                </div>
+                <div class="stats">
+                  <span style="color: var(--accent-green)">● 2 Completed</span>
+                </div>
+              </div>
+
+              <!-- Goals List -->
+              <div class="goals-list">
+                <div class="goal-card">
+                  <div class="goal-info">
+                    <div class="checkbox"></div>
+                    <span class="goal-text"
+                      >Design the full-width dashboard layout</span
+                    >
+                    <span class="tag tag-high">Priority</span>
+                  </div>
+                  <div class="actions">
+                    <button class="btn-icon">✎</button>
+                    <button class="btn-icon">🗑</button>
+                  </div>
+                </div>
+
+                <div class="goal-card">
+                  <div class="goal-info">
+                    <div class="checkbox"></div>
+                    <span class="goal-text"
+                      >Learn advanced CSS Grid and Flexbox</span
+                    >
+                    <span class="tag tag-med">Study</span>
+                  </div>
+                  <div class="actions">
+                    <button class="btn-icon">✎</button>
+                    <button class="btn-icon">🗑</button>
+                  </div>
+                </div>
+
+                <div class="goal-card" style="opacity: 0.6">
+                  <div class="goal-info">
+                    <div
+                      class="checkbox"
+                      style="
+                        background: var(--accent-green);
+                        border-color: var(--accent-green);
+                      "
+                    >
+                      ✓
+                    </div>
+                    <span
+                      class="goal-text"
+                      style="text-decoration: line-through"
+                      >Drink 4L Water</span
+                    >
+                    <span
+                      class="tag"
+                      style="
+                        background: rgba(74, 222, 128, 0.1);
+                        color: var(--accent-green);
+                      "
+                      >Health</span
+                    >
+                  </div>
+                  <div class="actions">
+                    <button class="btn-icon">🗑</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Add New Goal -->
+              <div class="add-goal-box">
+                <input
+                  type="text"
+                  placeholder="Likho naya goal aur phod do..."
+                />
+                <button class="add-btn">Add Goal</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- motivsnel page -->
+      <section id="motivtion" class="full-page">
+        <!-- Background Abstract Elements -->
+        <div class="main-moti">
+          <div class="main-moti-degine"></div>
+        </div>
+
+        <!-- UI Content Layer -->
+        <div class="ui-content">
+          <!-- Header Row -->
+          <div class="moti-header">
+            <button class="back">
+              <i class="ri-arrow-left-line"></i>
+            </button>
+            <div class="logo">GEEKS FOR GROWTH</div>
+          </div>
+
+          <!-- Quote Card Container -->
+          <div class="quote-card">
+            <div class="card-inner">
+              <span class="quote-mark">“</span>
+              <div class="card-moti">
+                <div class="card-moti-text">
+                  <h1>
+                    The most powerful person in the world is the
+                    <span>storyteller.</span>
+                  </h1>
+                  <p class="author">— Steve Jobs</p>
+                  <div class="side-border"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- daliy playner page -->
+      <section class="full-page">
+        <div>
+          <div class="full-page-container">
+            <header>
+              <button class="back">
+                <i class="ri-arrow-left-line"></i>
+              </button>
+              <h1>MY 24-HOUR SCHEDULE</h1>
+            </header>
+
+            <div class="main-grid">
+              <div class="column">
+                <div class="row">
+                  <div class="time">00:00</div>
+                  <input
+                    class="input-text"
+                    type="text"
+                    placeholder="Add task..."
+                  />
+                </div>
+                <div class="row">
+                  <div class="time">01:00</div>
+                  <input
+                    class="input-text"
+                    type="text"
+                    placeholder="Add task..."
+                  />
+                </div>
+                <div class="row">
+                  <div class="time">02:00</div>
+                  <input
+                    class="input-text"
+                    type="text"
+                    placeholder="Add task..."
+                  />
+                </div>
+                <div class="row">
+                  <div class="time">03:00</div>
+                  <input
+                    class="input-text"
+                    type="text"
+                    placeholder="Add task..."
+                  />
+                </div>
+                <div class="row">
+                  <div class="time">04:00</div>
+                  <input
+                    class="input-text"
+                    type="text"
+                    placeholder="Add task..."
+                  />
+                </div>
+                <div class="row">
+                  <div class="time">05:00</div>
+                  <input
+                    class="input-text"
+                    type="text"
+                    placeholder="Add task..."
+                  />
+                </div>
+                <div class="row">
+                  <div class="time">06:00</div>
+                  <input
+                    class="input-text"
+                    type="text"
+                    placeholder="Add task..."
+                  />
+                </div>
+                <div class="row">
+                  <div class="time">07:00</div>
+                  <input
+                    class="input-text"
+                    type="text"
+                    placeholder="Add task..."
+                  />
+                </div>
+                <div class="row">
+                  <div class="time">08:00</div>
+                  <input
+                    class="input-text"
+                    type="text"
+                    placeholder="Add task..."
+                  />
+                </div>
+                <div class="row">
+                  <div class="time">09:00</div>
+                  <input
+                    class="input-text"
+                    type="text"
+                    placeholder="Add task..."
+                  />
+                </div>
+                <div class="row">
+                  <div class="time">10:00</div>
+                  <input
+                    class="input-text"
+                    type="text"
+                    placeholder="Add task..."
+                  />
+                </div>
+                <div class="row">
+                  <div class="time">11:00</div>
+                  <input
+                    class="input-text"
+                    type="text"
+                    placeholder="Add task..."
+                  />
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="row">
+                  <div class="time">12:00</div>
+                  <input
+                    class="input-text"
+                    type="text"
+                    placeholder="Add task..."
+                  />
+                </div>
+                <div class="row">
+                  <div class="time">13:00</div>
+                  <input
+                    class="input-text"
+                    type="text"
+                    placeholder="Add task..."
+                  />
+                </div>
+                <div class="row">
+                  <div class="time">14:00</div>
+                  <input
+                    class="input-text"
+                    type="text"
+                    placeholder="Add task..."
+                  />
+                </div>
+                <div class="row">
+                  <div class="time">15:00</div>
+                  <input
+                    class="input-text"
+                    type="text"
+                    placeholder="Add task..."
+                  />
+                </div>
+                <div class="row">
+                  <div class="time">16:00</div>
+                  <input
+                    class="input-text"
+                    type="text"
+                    placeholder="Add task..."
+                  />
+                </div>
+                <div class="row">
+                  <div class="time">17:00</div>
+                  <input
+                    class="input-text"
+                    type="text"
+                    placeholder="Add task..."
+                  />
+                </div>
+                <div class="row">
+                  <div class="time">18:00</div>
+                  <input
+                    class="input-text"
+                    type="text"
+                    placeholder="Add task..."
+                  />
+                </div>
+                <div class="row">
+                  <div class="time">19:00</div>
+                  <input
+                    class="input-text"
+                    type="text"
+                    placeholder="Add task..."
+                  />
+                </div>
+                <div class="row">
+                  <div class="time">20:00</div>
+                  <input
+                    class="input-text"
+                    type="text"
+                    placeholder="Add task..."
+                  />
+                </div>
+                <div class="row">
+                  <div class="time">21:00</div>
+                  <input
+                    class="input-text"
+                    type="text"
+                    placeholder="Add task..."
+                  />
+                </div>
+                <div class="row">
+                  <div class="time">22:00</div>
+                  <input
+                    class="input-text"
+                    type="text"
+                    placeholder="Add task..."
+                  />
+                </div>
+                <div class="row">
+                  <div class="time">23:00</div>
+                  <input
+                    class="input-text"
+                    type="text"
+                    placeholder="Add task..."
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
